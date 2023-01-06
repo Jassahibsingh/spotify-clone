@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" />
+    <title>Spotify - by Jassahib Singh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <span id="logo"><img src="logo.png">Spotify</span>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Artists
+                <i class="fa fa-chevron-circle-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="justin.html">Justin Bieber</a>
+                <a href="diljit.html">Diljit Dosanjh</a>
+                <a href="shawn.html">Shawn Mendes</a>
+                <a href="ap.html">AP Dhillon</a>
+                <a href="selena.html">Selena Gomez</a>
+            </div>
+        </div>
+        <a href="trending.html">Trending</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Justin Bieber</h1>
+            <div class="songItemContainer"><img src="justin.jpg" id="banner">
+                <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='0'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='1'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='2'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='3'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='4'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div>
+                <!-- <div class="songItem">
+                    <img alt="Baby">
+                    <span class="songName">Baby</span>
+                    <span class="songListPlay"><span class="timestamp">3:44 <i id='5'
+                                class="fas songItemPlay fa-play"></i></span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontAwesone icons-->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="fas fa-3x fa-play" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="play.gif" width="82px" alt="play" id="gif"><span id="masterSongName">Baby</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f01cd21152.js" crossorigin="anonymous"></script>
+    <script src="justin.js"></script>
+</body>
+
+</html>

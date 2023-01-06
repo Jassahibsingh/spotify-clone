@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+    background-color: rgb(31, 30, 30);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+/* Spotify Logo Colapsable */
+.navbar span {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a green background color to navbar links on hover */
+.navbar a:hover,
+.navbar span:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgba(19, 219, 89, 0.836);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(250, 250, 250, 0.521);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: rgb(247, 243, 243);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(221, 221, 221, 0.233);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.navbar img {
+    width: 31px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin: -1px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.page {
+    display: flex;
+}
+
+/* .sidebar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sidebar {
+    /* box-sizing: border-box;
+    background-color:rebeccapurple; *
+    color: aliceblue;
+    width: 30vh;
+    text-decoration: none;
+} */
+
+.artists, .popular {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(31, 30, 30);
+    padding: 10px 10px 10px 10px;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.artists h1, .popular h1 {
+    color: aliceblue;
+}
+
+.artists a,
+.artists a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(122, 121, 120);
+    box-shadow: 0 4px 8px 0 rgba(255, 253, 253, 0.219);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 180px;
+    height: 210px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+    border-radius: 20px 0 20px 0;
+    height: 180px;
+    width: 150px;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.548);
+    /* width: 181px;
+    height: 211px; */
+}
+
+/* Add some padding inside the card container */
+.sContainer {
+    padding: 2px 16px;
+}
+
+footer {
+    background: #4f504ffd;
+}
+
+footer img {
+    width: 75px;
+    border-radius: 50%;
+    padding: 31px 3px 31px 31px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+#f_imgTitle {
+    font-size: 50px;
+}
